@@ -12,25 +12,7 @@
   z-index: 1;
   visibility: hidden;
   transition: all 0.375s;
-  isolation: isolate;
-  animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
-@keyframes slide-in-top {
-  0% {
-    transform: translateY(-1000px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-@media (min-width: 760px) {
-  .main-nav {
-    position: static;
-    visibility: visible;
-    opacity: 1;
-  }
+  opacity: 1;
 }
 
 .main-nav.is-open {
@@ -114,14 +96,6 @@
 
 .main-nav li:nth-child(3) a {
   transition: all 275ms 275ms;
-}
-
-.main-nav li:nth-child(4) a {
-  transition: all 275ms 325ms;
-}
-
-.main-nav li:nth-child(5) a {
-  transition: all 275ms 375ms;
 }
 
 /* Decoration */
