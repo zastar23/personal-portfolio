@@ -1,0 +1,13 @@
+{
+	"name": "personal-site",
+	"version": "1.0.0",
+	"description": "My presentation site containig all my work on front-end development",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"sass-dev": "sass --watch --update --style=expanded assets/scss:assets/css",
+		"sass-prod": "sass --no-source-map --style=compressed assets/scss:assets/css"
+	},
+	"author": "Florin Porut",
+	"license": "ISC"
+}

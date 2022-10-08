@@ -1,0 +1,15 @@
+<svg
+						class="logo-svg"
+						width="25"
+						height="25"
+						viewbox="0 0 25 25"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<rect width="25" height="25" fill="#010101" />
+						<path
+							d="M7.088 6.912V11.304H12.032V13.992H7.088V21H4.016V4.272H12.752V6.912H7.088Z"
+							fill="white"
+						/>
+						<rect x="13" y="16" width="5" height="5" fill="#D31005" />
+					</svg>
