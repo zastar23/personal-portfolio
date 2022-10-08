@@ -6,4 +6,11 @@ burger.addEventListener('click', function (e) {
 	nav.classList.toggle('is-open')
 })
 
+window.addEventListener('resize', () => {
+	if (window.innerWidth <= 760) {
+		burger.classList.remove('is-open')
+		nav.classList.remove('is-open')
+	}
+})
+
 export * from './nav.js'
