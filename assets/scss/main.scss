@@ -3,11 +3,13 @@
 @import './components/about';
 @import './components/variables';
 @import './components/portfolio';
+@import './components/clock';
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	font-family: var(--font-style);
+	scroll-behavior: smooth;
 }
 
 body {
