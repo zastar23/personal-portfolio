@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;700&display=swap"); /* Main menu positionning */
-/* https://codepen.io/GeoffreyCrofte/pen/ajKVRq*/
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;700&display=swap");
 .main-nav {
   position: absolute;
   top: 0;
@@ -35,7 +34,6 @@
   visibility: visible;
 }
 
-/* Yellow band effect */
 .main-nav::before {
   content: "";
   position: absolute;
@@ -43,9 +41,9 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(180deg, rgb(101, 9, 4) 11%, rgb(167, 10, 5) 56%, rgb(211, 129, 5) 96%);
+  background-color: var(--color-neutral-100);
   transform-origin: 0 0;
-  transform: skew(-14deg) translateX(-120%);
+  transform: translateX(-120%);
   transition: all 0.275s 0.1s;
 }
 @media (min-width: 760px) {
@@ -56,7 +54,7 @@
 }
 
 .main-nav.is-open::before {
-  transform: skew(-14deg) translateX(0);
+  transform: translateX(0);
 }
 @media (min-width: 760px) {
   .main-nav.is-open::before {
@@ -64,13 +62,12 @@
   }
 }
 
-/* Skewing effect on menu links */
 .main-nav ul {
   display: inline-flex;
   flex-direction: column;
   height: 93%; /* Should be 100%, but we have a notice message :D */
   justify-content: center;
-  transform: translateX(-18%) skew(-16deg);
+  align-items: center;
 }
 @media (min-width: 760px) {
   .main-nav ul {
@@ -86,7 +83,6 @@
   display: block;
   margin: 0.5rem 0;
   text-align: right;
-  transform: skew(16deg);
 }
 @media (min-width: 760px) {
   .main-nav li {
