@@ -350,17 +350,6 @@
   text-transform: uppercase;
   font-size: var(--font-size-100);
 }
-.main .hero-cta-flex-container > div > button {
-  color: var(--color-accent-700);
-  width: clamp(1rem, 0.43rem + 2.86vw, 3rem);
-  height: clamp(1rem, 0.43rem + 2.86vw, 3rem);
-  border-radius: 100%;
-  font-size: var(--font-size-200);
-  border: none;
-  outline: none;
-  margin-left: 0.5rem;
-  flex: 1;
-}
 .main .hero-cta-title {
   font-size: var(--font-size-400);
   text-transform: uppercase;
@@ -524,6 +513,28 @@
 }
 .inactive hr:nth-of-type(2) {
   background-color: var(--color-neutral-500);
+}
+
+.arrow {
+  background-color: var(--color-neutral-900);
+  color: var(--color-accent-700);
+  padding: 5px 10px;
+  border-radius: 100%;
+  font-size: var(--font-size-200);
+  border: none;
+  outline: none;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+@media (min-width: 760px) {
+  .arrow {
+    padding: 10px 20px;
+  }
+}
+@media (min-width: 1400px) {
+  .arrow {
+    padding: 10px 25px;
+  }
 }
 
 :root {

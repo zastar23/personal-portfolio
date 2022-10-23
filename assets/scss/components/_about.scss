@@ -100,18 +100,6 @@
 					text-transform: uppercase;
 					font-size: var(--font-size-100);
 				}
-
-				& > div > button {
-					color: var(--color-accent-700);
-					width: clamp(1rem, calc(0.43rem + 2.86vw), 3rem);
-					height: clamp(1rem, calc(0.43rem + 2.86vw), 3rem);
-					border-radius: 100%;
-					font-size: var(--font-size-200);
-					border: none;
-					outline: none;
-					margin-left: 0.5rem;
-					flex: 1;
-				}
 			}
 
 			&-title {
@@ -309,5 +297,26 @@
 
 	hr:nth-of-type(2) {
 		background-color: var(--color-neutral-500);
+	}
+}
+
+.arrow {
+	background-color: var(--color-neutral-900);
+	color: var(--color-accent-700);
+	padding: 5px 10px;
+	// height: clamp(1rem, calc(0.43rem + 2.86vw), 3rem);
+	border-radius: 100%;
+	font-size: var(--font-size-200);
+	border: none;
+	outline: none;
+	margin-left: 0.5rem;
+	cursor: pointer;
+
+	@media (min-width: 760px) {
+		padding: 10px 20px;
+	}
+
+	@media (min-width: 1400px) {
+		padding: 10px 25px;
 	}
 }
