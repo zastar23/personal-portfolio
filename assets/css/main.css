@@ -270,10 +270,12 @@
 }
 .logo > a > img {
   width: 2.5rem;
+  height: 2.5rem;
 }
 @media (min-width: 760px) {
   .logo > a > img {
     width: 5rem;
+    height: 5rem;
   }
 }
 

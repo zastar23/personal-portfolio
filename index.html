@@ -1,415 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="icon" href="/images/icon.svg" />
-		<link rel="stylesheet" href="./assets/css/main.css" />
-		<script defer type="module" src="./src/about.js"></script>
-		<script defer type="module" src="./src/portfolio.js"></script>
-		<script defer type="module" src="./src/cv.js"></script>
-		<title>Florin's Personal Site</title>
-	</head>
-	<body>
-		<header id="header" class="header">
-			<div class="logo">
-				<a href="#header">
-					<img src="./images/icon.svg" alt="site logo" width="10" height="10" />
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="/images/icon.svg">
+	<link rel="stylesheet" href="./assets/css/main.css">
+	<script type="module" src="./src/about.js"></script>
+	<script type="module" src="./src/portfolio.js"></script>
+
+	<title>Florin's Personal Site</title>
+</head>
+
+<body>
+	<header class="header">
+		<div class="logo">
+			<a href="#main-nav">
+				<img src="./images/icon.svg" alt="site logo" width="10" height="10">
+			</a>
+		</div>
+
+		<button id="burger" class="open-main-nav">
+			<span class="burger"></span>
+			<span class="burger-text">Menu</span>
+		</button>
+
+		<nav class="main-nav" id="main-nav">
+			<ul>
+				<li>
+					<a class="link" href="#about">About</a>
+				</li>
+				<li>
+					<a class="link" href="#portfolio">Portofolio</a>
+				</li>
+				<li>
+					<a class="link" href="#contact">Contact</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<main class="main">
+		<section class="hero">
+			<div class="hero-image">
+				<picture>
+					<source srcset="./images/desktop-me.jpg" media="(min-width: 1000px)">
+					<img src="./images/me.webp" alt="portrait of me" width="100" height="100">
+				</picture>
+			</div>
+			<div class="hero-cta">
+				<div class="hero-cta-flex-container">
+					<hr class="hero-cta-title-line">
+					<h1 class="hero-cta-title">
+						I am <br>
+						<span class="red">Florin</span> <br>
+						front end <br>
+						developer
+					</h1>
+				</div>
+				<div class="hero-cta-flex-container">
+					<hr class="btn-line">
+					<div>
+						<span>Check my cv</span>
+						<a class="arrow" href="./images/Florin's Resume.pdf" download><span>⬇</span></a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="about" class="about">
+			<div class="about-content">
+				<div class="about-content-scroll-component">
+					<div class="active square-mark">
+						<div class="active red-circle"></div>
+					</div>
+					<hr class="active">
+					<div class="square-mark inactive">
+						<div class="inactive red-circle"></div>
+					</div>
+					<!-- <hr class="inactiv> -->
+				</div>
+				<div class="about-content-text">
+					<p class="active-text">
+						I am a <span class="red">dedicated</span> and
+						<span class="red">hardworking</span> individual with a passion for
+						front-end development, ui/ux and cooking. I try my best to
+						accomplish my task as best and fast as possible, but I'm also
+						known to plan on specific problems to get a higher level
+						understanding on how to
+						<span class="red"> implement solutions. </span>
+					</p>
+					<p class="inactive-text">
+						I hope this short introduction of myself gave you a little insight
+						about me. Can't wait to <span class="red">colaborate!</span> P.s.
+						I make excelent pasta and egg fried rice! 😉
+					</p>
+				</div>
+			</div>
+			<div class="about-social-container">
+				<a href="https://www.facebook.com/kb.om2/" target="_blank">
+					<img src="./images/icons8-facebook.svg" alt="facebook logo" width="100" height="100">
+				</a>
+				<a href="https://www.linkedin.com/in/florin-porut-172283216/" target="_blank">
+					<img src="./images/icons8-linkedin-circled.svg" alt="linkedin logo icon" width="100" height="100">
+				</a>
+				<a href="https://www.instagram.com/porutflorin/" target="_blank">
+					<img src="./images/icons8-instagram.svg" alt="instagram logo icon" width="100" height="100">
+				</a>
+				<a href="https://twitter.com/PorutF" target="_blank">
+					<img src="./images/icons8-twitter-circled.svg" alt="twitter logo icon" width="100" height="100">
 				</a>
 			</div>
-			<!-- https://codepen.io/GeoffreyCrofte/pen/ajKVRq -->
+		</section>
+		<section id="portfolio" class="portfolio">
+			<h2 class="portfolio-title">My work</h2>
+			<div class="portfolio-projects">
+				<div class="project">
+					<div class="card">
+						<img loading="lazy" src="./images/chatbots.webp" alt="" width="100" height="200">
+						<div class="descriptions">
+							<h2>The Switch Chatbots</h2>
+							<p>
+								My first real job was to create this homepage for a friend's
+								business to help promote their use of automated chatbots.
+							</p>
+							<div class="descriptions-anchors">
+								<a target="_blank" href="https://zastar23.github.io/the-switch-chatbots/">View</a>
+								<a target="_blank" href="https://github.com/zastar23/the-switch-chatbots">Repo</a>
+							</div>
+						</div>
+					</div>
+				</div>
 
-			<button id="burger" class="open-main-nav">
-				<span class="burger"></span>
-				<span class="burger-text">Menu</span>
-			</button>
+				<div class="project">
+					<div class="card">
+						<img loading="lazy" src="./images/easy-bank.webp" alt="" width="100" height="200">
+						<div class="descriptions">
+							<h2>Easy Bank</h2>
+							<p>
+								This challenge I took from
+								<a target="_blank" href="https://www.frontendmentor.io/home">Fontend Mentor</a>
+								to solidify my knowledge regarding HTML, CSS and Responsive
+								Layout.
+							</p>
+							<div class="descriptions-anchors">
+								<a target="_blank"
+									href="https://zastar23.github.io/easybank-landing-page-master/">View</a>
+								<a target="_blank"
+									href="https://github.com/zastar23/easybank-landing-page-master">Repo</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="project">
+					<div class="card">
+						<img loading="lazy" src="./images/manage.webp" alt="" width="100" height="200">
+						<div class="descriptions">
+							<h2>Manage</h2>
+							<p>
+								In this challenge I worked with HTML, CSS, JavaScript in
+								implementing the layout, responsivness and slider for mobile
+								view.
+							</p>
+							<div class="descriptions-anchors">
+								<a target="_blank"
+									href="https://zastar23.github.io/manage-landing-page-master/">View</a>
+								<a target="_blank"
+									href="https://github.com/zastar23/manage-landing-page-master">Repo</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="project">
+					<div class="card">
+						<img loading="lazy" src="./images/rest-countries-api.webp" alt="" width="100" height="200">
+						<div class="descriptions">
+							<h2>Countries API</h2>
+							<p>
+								The app let's you search for any country and get information
+								about it, sort the countries by regions and change the light
+								mode on the page.
+							</p>
+							<div class="descriptions-anchors">
+								<a target="_blank" href="https://zastar23.github.io/rest-countries-api/">View</a>
+								<a target="_blank" href="https://github.com/zastar23/rest-countries-api">Repo</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="project">
+					<div class="card">
+						<img loading="lazy" src="./images/rock-paper-scissors.webp" alt="" width="100" height="200">
+						<div class="descriptions">
+							<h2>Rock Paper Scissors</h2>
+							<p>
+								The classic rock, paper, scissors game made with vanilla
+								JavaScript. It has also an extra game mode! Have fun! 😀
+							</p>
+							<div class="descriptions-anchors">
+								<a target="_blank" href="https://zastar23.github.io/Rock-paper-scissors-game/">View</a>
+								<a target="_blank" href="https://github.com/zastar23/Rock-paper-scissors-game">Repo</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="project">
+					<div class="card">
+						<img loading="lazy" src="./images/space-tourism.webp" alt="" width="100" height="200">
+						<div class="descriptions">
+							<h2>Space Tourism</h2>
+							<p>
+								In this project I practice working with JSON data to get and
+								display all the informations in the page.
+							</p>
+							<div class="descriptions-anchors">
+								<a target="_blank" href="https://zastar23.github.io/space-app/index.html">View</a>
+								<a target="_blank" href="https://github.com/zastar23/space-app">Repo</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="project">
+					<div class="card">
+						<img loading="lazy" src="./images/sunnyside-agency.webp" alt="" width="100" height="200">
+						<div class="descriptions">
+							<h2>Sunnyside Agency</h2>
+							<p>
+								One of my very first projects with HTML and CSS that I liked
+								how it turned out. This was a good oportunity to practice grid
+								and flexbox.
+							</p>
+							<div class="descriptions-anchors">
+								<a target="_blank"
+									href="https://zastar23.github.io/sunnyside-agency-landing-page-main/">View</a>
+								<a target="_blank"
+									href="https://github.com/zastar23/sunnyside-agency-landing-page-main">Repo</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="contact" class="contact">
+			<div class="line"></div>
+			<div class="line2"></div>
+			<div class="contact-content">
+				<div class="contact-title">
+					<h2>Do you have a job for me?</h2>
+				</div>
+				<div class="contact-form">
+					<h2>Contact me here</h2>
+					<form class="form" action="#" id="form">
+						<label for="name">Name:</label>
+						<input class="form-name" type="text" name="name" placeholder="Jhon Doe" id="name" required
+							pattern="^[a-z A-Z]+$">
+						<label for="email">Email:</label>
+						<input class="form-email" type="email" placeholder="jhondoe@example.com" name="email" required
+							id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+						<label for="message">You're message:</label>
+						<textarea class="form-message" name="message" id="message"></textarea>
+						<button class="form-button" type="submit" form="form">
+							Send
+						</button>
+					</form>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer></footer>
+</body>
 
-			<nav class="main-nav" id="main-nav">
-				<ul>
-					<li>
-						<a class="link" href="#about">About</a>
-					</li>
-					<li>
-						<a class="link" href="#portfolio">Portofolio</a>
-					</li>
-					<li>
-						<a class="link" href="#contact">Contact</a>
-					</li>
-				</ul>
-			</nav>
-		</header>
-		<main class="main">
-			<section class="hero">
-				<div class="hero-image">
-					<picture>
-						<source
-							srcset="./images/desktop-me.jpg"
-							media="(min-width: 1000px)"
-						/>
-						<img
-							src="./images/me.webp"
-							alt="portrait of me"
-							width="100"
-							height="100"
-						/>
-					</picture>
-				</div>
-				<div class="hero-cta">
-					<div class="hero-cta-flex-container">
-						<hr class="hero-cta-title-line" />
-						<h1 class="hero-cta-title">
-							I am <br />
-							<span class="red">Florin</span> <br />
-							front end <br />
-							developer
-						</h1>
-					</div>
-					<div class="hero-cta-flex-container">
-						<hr class="btn-line" />
-						<div>
-							<span>Check my cv</span>
-							<a class="arrow" href="./images/Florin's Resume.pdf" download
-								><span>⬇</span></a
-							>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section id="about" class="about">
-				<div class="about-content">
-					<div class="about-content-scroll-component">
-						<div class="active square-mark">
-							<div class="active red-circle"></div>
-						</div>
-						<hr class="active" />
-						<div class="square-mark inactive">
-							<div class="inactive red-circle"></div>
-						</div>
-						<!-- <hr class="inactive" /> -->
-					</div>
-					<div class="about-content-text">
-						<p class="active-text">
-							I am a <span class="red">dedicated</span> and
-							<span class="red">hardworking</span> individual with a passion for
-							front-end development, ui/ux and cooking. I try my best to
-							accomplish my task as best and fast as possible, but I'm also
-							known to plan on specific problems to get a higher level
-							understanding on how to
-							<span class="red"> implement solutions. </span>
-						</p>
-						<p class="inactive-text">
-							I hope this short introduction of myself gave you a little insight
-							about me. Can't wait to <span class="red">colaborate!</span> P.s.
-							I make excelent pasta and egg fried rice! 😉
-						</p>
-					</div>
-				</div>
-				<div class="about-social-container">
-					<a href="https://www.facebook.com/kb.om2/" target="_blank">
-						<img
-							src="./images/icons8-facebook.svg"
-							alt="facebook logo"
-							width="100"
-							height="100"
-						/>
-					</a>
-					<a
-						href="https://www.linkedin.com/in/florin-porut-172283216/"
-						target="_blank"
-					>
-						<img
-							src="./images/icons8-linkedin-circled.svg"
-							alt="linkedin logo icon"
-							width="100"
-							height="100"
-						/>
-					</a>
-					<a href="https://www.instagram.com/porutflorin/" target="_blank">
-						<img
-							src="./images/icons8-instagram.svg"
-							alt="instagram logo icon"
-							width="100"
-							height="100"
-						/>
-					</a>
-					<a href="https://twitter.com/PorutF" target="_blank">
-						<img
-							src="./images/icons8-twitter-circled.svg"
-							alt="twitter logo icon"
-							width="100"
-							height="100"
-						/>
-					</a>
-				</div>
-			</section>
-			<section id="portfolio" class="portfolio">
-				<h2 class="portfolio-title">My work</h2>
-				<div class="portfolio-projects">
-					<div class="project">
-						<div class="card">
-							<img
-								loading="lazy"
-								src="./images/chatbots.webp"
-								alt=""
-								width="100"
-								height="200"
-							/>
-							<div class="descriptions">
-								<h2>The Switch Chatbots</h2>
-								<p>
-									My first real job was to create this homepage for a friend's
-									business to help promote their use of automated chatbots.
-								</p>
-								<div class="descriptions-anchors">
-									<a
-										target="_blank"
-										href="https://zastar23.github.io/the-switch-chatbots/"
-										>View</a
-									>
-									<a
-										target="_blank"
-										href="https://github.com/zastar23/the-switch-chatbots"
-										>Repo</a
-									>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="project">
-						<div class="card">
-							<img
-								loading="lazy"
-								src="./images/easy-bank.webp"
-								alt=""
-								width="100"
-								height="200"
-							/>
-							<div class="descriptions">
-								<h2>Easy Bank</h2>
-								<p>
-									This challenge I took from
-									<a target="_blank" href="https://www.frontendmentor.io/home"
-										>Fontend Mentor</a
-									>
-									to solidify my knowledge regarding HTML, CSS and Responsive
-									Layout.
-								</p>
-								<div class="descriptions-anchors">
-									<a
-										target="_blank"
-										href="https://zastar23.github.io/easybank-landing-page-master/"
-										>View</a
-									>
-									<a
-										target="_blank"
-										href="https://github.com/zastar23/easybank-landing-page-master"
-										>Repo</a
-									>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="project">
-						<div class="card">
-							<img
-								loading="lazy"
-								src="./images/manage.webp"
-								alt=""
-								width="100"
-								height="200"
-							/>
-							<div class="descriptions">
-								<h2>Manage</h2>
-								<p>
-									In this challenge I worked with HTML, CSS, JavaScript in
-									implementing the layout, responsivness and slider for mobile
-									view.
-								</p>
-								<div class="descriptions-anchors">
-									<a
-										target="_blank"
-										href="https://zastar23.github.io/manage-landing-page-master/"
-										>View</a
-									>
-									<a
-										target="_blank"
-										href="https://github.com/zastar23/manage-landing-page-master"
-										>Repo</a
-									>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="project">
-						<div class="card">
-							<img
-								loading="lazy"
-								src="./images/rest-countries-api.webp"
-								alt=""
-								width="100"
-								height="200"
-							/>
-							<div class="descriptions">
-								<h2>Countries API</h2>
-								<p>
-									The app let's you search for any country and get information
-									about it, sort the countries by regions and change the light
-									mode on the page.
-								</p>
-								<div class="descriptions-anchors">
-									<a
-										target="_blank"
-										href="https://zastar23.github.io/rest-countries-api/"
-										>View</a
-									>
-									<a
-										target="_blank"
-										href="https://github.com/zastar23/rest-countries-api"
-										>Repo</a
-									>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="project">
-						<div class="card">
-							<img
-								loading="lazy"
-								src="./images/rock-paper-scissors.webp"
-								alt=""
-								width="100"
-								height="200"
-							/>
-							<div class="descriptions">
-								<h2>Rock Paper Scissors</h2>
-								<p>
-									The classic rock, paper, scissors game made with vanilla
-									JavaScript. It has also an extra game mode! Have fun! 😀
-								</p>
-								<div class="descriptions-anchors">
-									<a
-										target="_blank"
-										href="https://zastar23.github.io/Rock-paper-scissors-game/"
-										>View</a
-									>
-									<a
-										target="_blank"
-										href="https://github.com/zastar23/Rock-paper-scissors-game"
-										>Repo</a
-									>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="project">
-						<div class="card">
-							<img
-								loading="lazy"
-								src="./images/space-tourism.webp"
-								alt=""
-								width="100"
-								height="200"
-							/>
-							<div class="descriptions">
-								<h2>Space Tourism</h2>
-								<p>
-									In this project I practice working with JSON data to get and
-									display all the informations in the page.
-								</p>
-								<div class="descriptions-anchors">
-									<a
-										target="_blank"
-										href="https://zastar23.github.io/space-app/index.html"
-										>View</a
-									>
-									<a
-										target="_blank"
-										href="https://github.com/zastar23/space-app"
-										>Repo</a
-									>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="project">
-						<div class="card">
-							<img
-								loading="lazy"
-								src="./images/sunnyside-agency.webp"
-								alt=""
-								width="100"
-								height="200"
-							/>
-							<div class="descriptions">
-								<h2>Sunnyside Agency</h2>
-								<p>
-									One of my very first projects with HTML and CSS that I liked
-									how it turned out. This was a good oportunity to practice grid
-									and flexbox.
-								</p>
-								<div class="descriptions-anchors">
-									<a
-										target="_blank"
-										href="https://zastar23.github.io/sunnyside-agency-landing-page-main/"
-										>View</a
-									>
-									<a
-										target="_blank"
-										href="https://github.com/zastar23/sunnyside-agency-landing-page-main"
-										>Repo</a
-									>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section id="contact" class="contact">
-				<div class="line"></div>
-				<div class="line2"></div>
-				<div class="contact-content">
-					<div class="contact-title">
-						<h2>Do you have a job for me?</h2>
-					</div>
-					<div class="contact-form">
-						<h2>Contact me here</h2>
-						<form class="form" action="#" id="form">
-							<label for="name">Name:</label>
-							<input
-								class="form-name"
-								type="text"
-								name="name"
-								placeholder="Jhon Doe"
-								id="name"
-								required
-								pattern="^[a-z A-Z]+$"
-							/>
-							<label for="email">Email:</label>
-							<input
-								class="form-email"
-								type="email"
-								placeholder="jhondoe@example.com"
-								name="email"
-								required
-								id="email"
-								pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-							/>
-							<label for="message">You're message:</label>
-							<textarea
-								class="form-message"
-								name="message"
-								id="message"
-							></textarea>
-							<button class="form-button" type="submit" form="form">
-								Send
-							</button>
-						</form>
-					</div>
-				</div>
-			</section>
-		</main>
-		<footer></footer>
-	</body>
 </html>
