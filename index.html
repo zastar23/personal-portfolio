@@ -337,7 +337,49 @@
 					</div>
 				</div>
 			</section>
-			<section id="contact" class="contact"></section>
+			<section id="contact" class="contact">
+				<div class="line"></div>
+				<div class="line2"></div>
+				<div class="contact-content">
+					<div class="contact-title">
+						<h2>Do you have a job for me?</h2>
+					</div>
+					<div class="contact-form">
+						<h2>Contact me here</h2>
+						<form class="form" action="#" id="form">
+							<label for="name">Name:</label>
+							<input
+								class="form-name"
+								type="text"
+								name="name"
+								placeholder="Jhon Doe"
+								id="name"
+								required
+								pattern="^[a-z A-Z]+$"
+							/>
+							<label for="email">Email:</label>
+							<input
+								class="form-email"
+								type="email"
+								placeholder="jhondoe@example.com"
+								name="email"
+								required
+								id="email"
+								pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+							/>
+							<label for="message">You're message:</label>
+							<textarea
+								class="form-message"
+								name="message"
+								id="message"
+							></textarea>
+							<button class="form-button" type="submit" form="form">
+								Send
+							</button>
+						</form>
+					</div>
+				</div>
+			</section>
 		</main>
 		<footer></footer>
 	</body>
