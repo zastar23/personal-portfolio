@@ -403,7 +403,6 @@
 }
 @media (min-width: 760px) {
   .about-content-scroll-component {
-    pointer-events: none;
     opacity: 0;
   }
 }
@@ -495,7 +494,6 @@
 
 .inactive-text {
   position: absolute;
-  pointer-events: none;
   opacity: 0;
   transform: translateY(100%);
   font-size: var(--font-size-200);
@@ -505,7 +503,6 @@
     position: static;
     transform: none;
     opacity: 1;
-    pointer-events: all;
   }
 }
 
