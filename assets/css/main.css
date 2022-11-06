@@ -300,6 +300,11 @@
   align-items: center;
   justify-items: start;
 }
+@media (min-width: 1000px) {
+  .main .hero {
+    margin-top: -15rem;
+  }
+}
 .main .hero-image > picture > img {
   width: 200%;
   height: 100%;
@@ -573,6 +578,7 @@
 @media (min-width: 760px) {
   .portfolio {
     margin-top: 15rem;
+    padding: 1rem;
   }
 }
 .portfolio-title {
@@ -608,24 +614,19 @@
   overflow: hidden;
   position: relative;
   width: 15rem;
+  height: 15rem;
 }
 @media (min-width: 760px) {
   .card {
-    width: 25rem;
+    width: 30rem;
     height: 30rem;
   }
 }
 
 .card img {
-  width: 15rem;
-  height: 20rem;
+  width: 100%;
+  height: 100%;
   transition: all 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
-}
-@media (min-width: 760px) {
-  .card img {
-    width: 25rem;
-    height: 30rem;
-  }
 }
 
 .descriptions {
@@ -689,7 +690,7 @@
 }
 @media (min-width: 760px) {
   .descriptions {
-    width: 25rem;
+    width: 30rem;
     height: 30rem;
   }
 }

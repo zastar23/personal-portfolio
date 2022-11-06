@@ -39,6 +39,10 @@
 		align-items: center;
 		justify-items: start;
 
+		@media (min-width: 1000px) {
+			margin-top: -15rem;
+		}
+
 		&-image > picture > img {
 			width: 200%;
 			height: 100%;
