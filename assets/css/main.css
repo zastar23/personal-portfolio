@@ -246,9 +246,9 @@
 :root {
   --font-style: "Cormorant", serif;
   --font-size-100: clamp(0.69rem, calc(0.34rem + 1.75vw), 1.92rem);
-  --font-size-200: clamp(0.83rem, calc(0.39rem + 2.24vw), 2.4rem);
-  --font-size-300: clamp(1rem, calc(0.43rem + 2.86vw), 2rem);
-  --font-size-400: clamp(1.2rem, calc(0.47rem + 3.64vw), 3.75rem);
+  --font-size-200: clamp(1.2rem, calc(1.01rem + 0.93vw), 2.5rem);
+  --font-size-300: clamp(1rem, calc(0.86rem + 0.71vw), 2rem);
+  --font-size-400: clamp(2.07rem, calc(1.67rem + 2.01vw), 4.88rem);
   --font-size-500: clamp(1.44rem, calc(0.51rem + 4.64vw), 4.69rem);
   --font-size-700: 3rem;
   --font-size-900: 4rem;
@@ -327,6 +327,11 @@
     width: 50rem;
   }
 }
+@media (min-width: 2000px) {
+  .main .hero-image > picture > img {
+    width: 70rem;
+  }
+}
 .main .hero-cta {
   width: 100%;
   display: flex;
@@ -395,65 +400,42 @@
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-.about-content {
-  display: grid;
-  grid-template-columns: 1fr 4fr;
-}
-.about-content-scroll-component {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
-}
 @media (min-width: 760px) {
-  .about-content-scroll-component {
-    opacity: 0;
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
   }
 }
-.about-content-scroll-component .square-mark {
-  width: 1rem;
-  height: 1rem;
-  border-radius: 1px;
-  /* centering the circle */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.about-content {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
 }
-.about-content-scroll-component .square-mark .red-circle {
-  width: 0.8rem;
-  height: 0.8rem;
-  border-radius: 100vmax;
-}
-.about-content-scroll-component .square-mark:nth-of-type(2) {
-  width: 1rem;
-  height: 1rem;
-  border-radius: 1px;
-  /* centering the circle */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.about-content-scroll-component > hr:nth-of-type(1) {
-  width: 1px;
-  flex: 1;
-  border: none;
+@media (min-width: 760px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
 }
 .about-content-text {
   display: flex;
   flex-direction: column;
-  justify-content: end;
-  min-height: 18rem;
-  position: relative;
-  overflow-y: hidden;
+  justify-content: center;
+  align-items: center;
 }
 .about-content-text > p {
   line-height: 1.5;
   overflow: hidden;
 }
+@media (min-width: 760px) {
+  .about-content-text > p {
+    text-align: center;
+    width: 80ch;
+  }
+}
 .about-content-text > p > .red {
   color: var(--color-accent-700);
-  font-size: var(--font-size-300);
+  font-size: var(--font-size-200);
   font-weight: bold;
 }
 .about-social-container {
@@ -474,60 +456,15 @@
 @media (min-width: 760px) {
   .about-social-container {
     flex-direction: row;
-    grid-row: 2;
-    justify-content: space-between;
-    margin-left: 15rem;
+    justify-content: space-evenly;
     margin-top: 5rem;
-    gap: 3rem;
   }
 }
 
 .active-text {
-  font-size: var(--font-size-200);
+  font-size: var(--font-size-300);
   line-height: 1.5;
-  transition: all 500ms ease;
-  position: absolute;
-  transform: translateY(0);
-  top: 0;
-}
-@media (min-width: 760px) {
-  .active-text {
-    position: static;
-    transform: none;
-  }
-}
-
-.inactive-text {
-  position: absolute;
-  opacity: 0;
-  transform: translateY(100%);
-  font-size: var(--font-size-200);
-}
-@media (min-width: 760px) {
-  .inactive-text {
-    position: static;
-    transform: none;
-    opacity: 1;
-  }
-}
-
-.active {
-  transition: all 500ms ease;
-  background-color: var(--color-neutral-900);
-}
-.active .red-circle {
-  background-color: var(--color-accent-700);
-}
-.active hr:nth-of-type(1) {
-  background-color: var(--color-neutral-900);
-}
-
-.inactive {
-  transition: all 500ms ease;
-  background-color: var(--color-neutral-500);
-}
-.inactive hr:nth-of-type(2) {
-  background-color: var(--color-neutral-500);
+  padding-left: 1rem;
 }
 
 .arrow {
@@ -555,9 +492,9 @@
 :root {
   --font-style: "Cormorant", serif;
   --font-size-100: clamp(0.69rem, calc(0.34rem + 1.75vw), 1.92rem);
-  --font-size-200: clamp(0.83rem, calc(0.39rem + 2.24vw), 2.4rem);
-  --font-size-300: clamp(1rem, calc(0.43rem + 2.86vw), 2rem);
-  --font-size-400: clamp(1.2rem, calc(0.47rem + 3.64vw), 3.75rem);
+  --font-size-200: clamp(1.2rem, calc(1.01rem + 0.93vw), 2.5rem);
+  --font-size-300: clamp(1rem, calc(0.86rem + 0.71vw), 2rem);
+  --font-size-400: clamp(2.07rem, calc(1.67rem + 2.01vw), 4.88rem);
   --font-size-500: clamp(1.44rem, calc(0.51rem + 4.64vw), 4.69rem);
   --font-size-700: 3rem;
   --font-size-900: 4rem;
